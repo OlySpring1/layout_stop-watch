@@ -1,0 +1,17 @@
+.clockface {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px; }
+  .clockface__twelve {
+    position: absolute;
+    top: 3%; }
+  .clockface__tree {
+    position: absolute;
+    right: 3%; }
+  .clockface__six {
+    position: absolute;
+    bottom: 3%; }
+  .clockface__nine {
+    position: absolute;
+    left: 3%; }
+
+/*# sourceMappingURL=clockface.css.map */

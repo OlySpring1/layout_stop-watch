@@ -1,0 +1,47 @@
+.clock__hand-minut, .clock__hand-second {
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  border-radius: 5px; }
+
+.clock {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: burlywood; }
+  .clock__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 3; }
+  .clock__hand-minut {
+    width: 150px;
+    background-color: #d15559;
+    -webkit-animation: anim-times 3600s cubic-bezier(1, 1, 0, 0) infinite;
+            animation: anim-times 3600s cubic-bezier(1, 1, 0, 0) infinite;
+    transform-origin: left center; }
+  .clock__hand-second {
+    width: 200px;
+    background-color: #4b9aaa;
+    -webkit-animation: anim-times 60s cubic-bezier(1, 1, 0, 0) infinite;
+            animation: anim-times 60s cubic-bezier(1, 1, 0, 0) infinite;
+    transform-origin: left center; }
+
+@-webkit-keyframes anim-times {
+  from {
+    transform: rotate(270deg); }
+  to {
+    transform: rotate(630deg); } }
+
+@keyframes anim-times {
+  from {
+    transform: rotate(270deg); }
+  to {
+    transform: rotate(630deg); } }
+
+/*# sourceMappingURL=clock.css.map */
